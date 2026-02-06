@@ -7,6 +7,7 @@
 
 /*-------ESTILOS GENERALES------*/
 
+
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
@@ -569,8 +570,79 @@ background-color: rgb(181, 214, 239);
   
 }
 
+/*--------- RESULTADOS -------*/
 
-/*--------MEDIAQUERIE sobre mí*/
+.general-resultados{
+    background-color: #eef2f2;
+    
+}
+.contenedor-cards {
+        max-width: 900px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        margin: 20px auto;
+}
+
+.resultados-alumnos h2{
+    margin-top: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-weight: 900;
+    font-size: 32px;
+}
+
+.card-testimonio {
+    padding: 16px 8px;
+    width:  360px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+.card-testimonio h3{
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #243e5c;
+    margin: 10px 0 4px;
+    font-size: 18px;
+}
+
+.card-testimonio p{
+    padding: 15px 20px;
+    font-style: italic;
+    font-size: 13px;
+    color: #444;
+}
+
+.card-testimonio img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    }
+
+.mentalidad-d {
+  background-color: #2a7c6f;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  border-radius: 12px;
+  margin: 50px auto;
+  max-width: 900px;
+}
+
+.mentalidad-d h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+
+
+/*-------- MEDIAQUERIE sobre mí*/
 
 @media (max-width: 520px){
 
