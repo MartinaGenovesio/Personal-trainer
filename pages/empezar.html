@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+  
+        <h1 class="fw-bold">Entrenamiento personalizado para vos</h1>
+
+<nav class="navbar navbar-expand-lg navbar-light mi-navbar"
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sobre-mi.html">Sobre mí</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./planes.html">Planes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="empezar.html">Empezar</a>
+        </li>
+      </ul>
+    </div>
+</nav>
+
+    </header>
+
+<main class="empezar">
+<h2>Empeza acá tu proceso de ingreso</h2>
+
+<form>
+    <fieldset class="formulario">
+        <legend>Datos básicos</legend>
+        <div class="campo">
+            <label for="name_form">Nombre</label>
+            <input type="text" id="name_form" required>
+        </div>
+        
+        <div class="campo">
+            <label for="lastname_form">Apellido</label>
+            <input type="text" id="lastname_form" required>
+        </div>
+        
+        <div class="campo">
+            <label for="Email">Email</label>
+            <input type="text" id="Email" placeholder="Gmail.com">
+        </div>
+        
+        <div class="campo">
+            <label for="number_phone">Número de telefono</label>
+            <input type="text" id="number_phone" placeholder="+54 9 3456 1234-567">
+        </div>
+    </fieldset>
+
+    <fieldset class="frecuencia">
+    <legend>Frecuencia de entrenamiento</legend>
+    <div class="checkbox-fr">
+        <input type="checkbox" id="una-vez-por-semana">
+        <label for="una-vez-por-semana">1 vez por semana</label>
+    
+        <input type="checkbox" id="dos-veces-por-semana">
+        <label for="dos-veces-por-semana">2 veces por semana</label>
+    
+        <input type="checkbox" id="tres-veces-por-semana">
+        <label for="tres-veces-por-semana">3 veces por semana</label>
+    
+        <input type="checkbox" id="cuatro-veces-por-semana">
+        <label for="cuatro-veces-por-semana">4 veces por semana</label>
+    
+        <input type="checkbox" id="cinco-veces-por-semana">
+        <label for="cinco-veces-por-semana">5 veces por semana</label>
+    </div>
+    </fieldset>
+
+    <fieldset class="info-fisica">
+        <legend>Información física</legend>
+    
+        <div class="fisico">
+            <label for="height">Altura</label>
+            <input type="text" id="height">
+        </div>
+        <div class="fisico">
+            <label for="weight">Peso actual</label>
+            <input type="text" id="weight">
+        </div>
+        <div class="fisico">
+            <label for="measures">Medidas</label>
+            <input type="text" id="measures">
+        </div>
+    </fieldset>
+
+    <fieldset class="resultados">
+        <legend>Qué resultados esperas ver/notar/sentir al cabo de un mes de entrenamiento?</legend>
+
+        <div class="respuestas-result">
+        <textarea name="resultados" id="resultados" placeholder="contame tus expectativas"></textarea>
+       </div>
+
+    </fieldset>
+
+    <fieldset class="resultados">
+        <legend>Tenes lesiones, molestias o limitaciones funcionales medicas a tener en cuenta?</legend>
+
+        <div class="respuestas-result"> 
+        <textarea name="lesiones" id="lesiones" placeholder="Pueden ser lesiones actuales/recientes o de varios años"></textarea>
+        </div>
+    </fieldset>
+    
+    <fieldset class="experiencia">
+         <legend>Tenes experiencia previa entrenando?</legend>
+     <div class="checkbox-fr">
+       <input type="checkbox" id="nunca-entrene">
+       <label for="nunca-entrene">Nunca entrené</label>
+
+       <input type="checkbox" id="algo-de-experiencia">
+       <label for="algo-de-experiencia">Algo de experiencia</label>
+
+       <input type="checkbox" id="entrene-anos">
+       <label for="entrene-anos">Entrené varios años</label>
+       </div>
+    </fieldset>
+
+  <input class="boton" type="submit" value="Enviar formulario">
+
+</form>
+
+
+
+    </main>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
