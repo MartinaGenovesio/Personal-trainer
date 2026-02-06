@@ -207,7 +207,6 @@ footer{
 
 }
 
-
 .lista-footer{
     list-style: none;
     list-style-position: inside;
@@ -240,8 +239,6 @@ nav ul{
     display: flex;
     gap: 12px; 
 }
-
-
 
 .sobre-mi figcaption{
     font-size: 16px;
@@ -294,7 +291,6 @@ nav ul{
     font-size: 24px;
     font-weight: 700;
 }
-
 
 .enfoque-lista {
     text-align: center;
@@ -358,7 +354,6 @@ nav ul{
      box-shadow: 0 8px 18px rgba(0,0,0,0.12); 
 }
 
-
 /*---FUERZA---*/
 
 .bloque-fuerza {
@@ -388,9 +383,8 @@ nav ul{
   box-shadow: 0 8px 18px rgba(0,0,0,0.12); 
 }
 
+
 /*----------"EMPEZAR" formulario HTML-------*/
-
-
 
 .empezar {
   max-width: 800px;
@@ -432,7 +426,6 @@ nav ul{
     color: #333;
 }
 
-
 .campo {
     display: flex;
     flex-direction: column;
@@ -451,8 +444,6 @@ nav ul{
 .checkbox-fr input{
     margin-top: 3px;
 }
-
-
 
 .fisico{
     display: flex;
@@ -502,8 +493,8 @@ nav ul{
      box-shadow: 3px 3px 5px
 }
 
-/*------------ PLANES -----------*/
 
+/*------------ PLANES -----------*/
 
 .seguimiento{
     display: flex;
@@ -524,26 +515,17 @@ nav ul{
   color: #2b2b2b;
 }
 
-
 .seguimiento-derecha{
     display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-
 .beneficios{
     border: 2px solid;
     border-radius: 10px;
     padding: 16px;
-    
-
-   /*  display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center; */
 }
-
 
 .beneficios:nth-of-type(1) h3::before {
     content: "🏋️ ";
@@ -576,6 +558,7 @@ background-color: rgb(181, 214, 239);
     background-color: #eef2f2;
     
 }
+
 .contenedor-cards {
         max-width: 900px;
         padding: 20px;
@@ -623,7 +606,7 @@ background-color: rgb(181, 214, 239);
     height: 250px;
     object-fit: cover;
     display: block;
-    }
+}
 
 .mentalidad-d {
   background-color: #2a7c6f;
@@ -640,6 +623,12 @@ background-color: rgb(181, 214, 239);
   margin-bottom: 15px;
 }
 
+.mentalidad-d:hover{
+   background-color: #0f4231;
+     color: rgb(167, 255, 218); 
+     box-shadow: 3px 3px 5px
+}
+
 
 
 /*-------- MEDIAQUERIE sobre mí*/
@@ -649,7 +638,6 @@ background-color: rgb(181, 214, 239);
 .grid-bloques {
   grid-template-columns: 1fr;
 }
-
 
 .bloque-habitos{
     grid-column: auto
@@ -668,4 +656,10 @@ background-color: rgb(181, 214, 239);
     flex-direction: column;
 }
 
+/*------- resultados ------*/
+.contenedor-cards {
+
+        display: flex;
+        flex-direction: column;
+}
 }
