@@ -92,10 +92,12 @@ main{
     justify-content: center;
     align-items: center;
     gap: 16px;
-
-
 }
-
+.plan-section ul {
+    list-style-position: inside;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
 .metodo-section{
     text-align: center;
 }
@@ -111,8 +113,9 @@ main{
     margin: 16px auto;
 }
 
-.metodo-section img{
-    border-radius: 500px;
+.metodo-section img {
+
+    width: 100%;    max-width: 900px;
 
 }
 
@@ -131,11 +134,14 @@ main{
    margin: 30px auto;
 }
 
-.servicio-section ul{
+.servicio-section ol {
+    list-style: none;
     color: #384c50;
     font-size: 20px;
+    list-style-position: inside;
+    padding: 0;
+    margin: 10px 0 0 0;
 }
-
 
 
 .plan-section h3{
@@ -203,10 +209,9 @@ footer{
 
 .lista-footer{
     list-style: none;
-}
-
-.lista-footer li{
-    margin: 4px 0px;
+    list-style-position: inside;
+    padding: 0;
+    margin: 10px 0 0 0;
 }
 
 .footer-creditos{
@@ -227,6 +232,7 @@ footer{
     font-size: 32px;
     text-align: center;
     margin: 16px;
+    font-weight: 700;
 }
 
 nav ul{
@@ -239,7 +245,6 @@ nav ul{
 .sobre-mi figcaption{
     font-size: 16px;
     text-align: center;
-
     margin: 16px;
 }
 
@@ -260,7 +265,8 @@ nav ul{
 .como-trabajo{
     text-align: center;
     margin: 16px;
-    font-size: 2rem;
+    font-size: 24px;
+    font-weight: 700;
 }
 
 .trabajo-img img{
@@ -281,11 +287,13 @@ nav ul{
 }
 
 .mi-enfoque {
-    font-size: 18px;
     text-align: center;
     Color: #222;
     letter-spacing: 1px;
+    font-size: 24px;
+    font-weight: 700;
 }
+
 
 .enfoque-lista {
     text-align: center;
@@ -293,6 +301,9 @@ nav ul{
     font-size: 1rem;
     color: #1a1820;
     margin-bottom: 16px;
+    list-style-position: inside;
+    padding: 0;
+    margin: 10px 0 0 0;
 }
 
 .palabra-personal{
@@ -559,7 +570,6 @@ background-color: rgb(181, 214, 239);
 }
 
 
-
 /*--------MEDIAQUERIE sobre mí*/
 
 @media (max-width: 520px){
@@ -573,9 +583,17 @@ background-color: rgb(181, 214, 239);
     grid-column: auto
 }
 
-/*-------MEDIAQUERIE planes.html------*/
+/*------- planes ------*/
 
 .seguimiento{
     flex-direction: column;
 }
+
+/*--------- empezar -------*/
+
+.checkbox-fr{
+    display: flex;
+    flex-direction: column;
+}
+
 }
