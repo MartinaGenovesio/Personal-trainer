@@ -198,7 +198,7 @@ div img{
 footer{
     /* visual */
    font-family: Georgia, 'Times New Roman', Times, serif;
-   background-color: rgb(115, 160, 171);
+   background-color: rgb(58, 78, 84);
    color: white;
    text-align: center;
 
@@ -416,11 +416,11 @@ nav ul{
 .formulario input:focus{
     outline: none;
     border-color: #243e5c;
-     box-shadow: 0 0 0 3px rgba(74,144,226,0.15);
+    box-shadow: 0 0 0 3px rgba(74,144,226,0.15);
 }
 
 .frecuencia legend, .info-fisica legend, .formulario legend, .resultados legend, .experiencia legend{
-       font-size: 1.3rem;
+    font-size: 1.3rem;
     font-weight: bold;
     margin-top: 15px;
     color: #333;
@@ -435,14 +435,30 @@ nav ul{
 
 .checkbox-fr{
     display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    margin-bottom: 12px;
+    align-items: center;
+    gap: 8px;
     cursor: pointer;
+    font-size: 15px;
 }
 
 .checkbox-fr input{
-    margin-top: 3px;
+    margin: 0;
+}
+
+.checkbox-ind{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.checkbox-ind:hover{
+    border-color: #888;
+    background: #f9f9f9;
 }
 
 .fisico{
