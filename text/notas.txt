@@ -1,0 +1,692 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*-------ESTILOS GENERALES------*/
+
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+header{
+    background-color: rgb(155, 196, 189);
+    display: flex;
+    
+    
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh 4vw;
+}
+
+
+h1{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+    
+}
+
+/*----------NAVEGACIÓN-------*/
+
+nav ul{
+    display: flex;
+    gap: 12px;
+}
+
+nav ul li{
+    list-style: none;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    background-color: rgb(203, 236, 235);
+    padding: 10px;
+    border-radius: 10px; 
+
+    
+  display: flex;
+  align-items: center;    
+  
+}
+
+nav ul li:hover{
+       background-color: rgb(78, 137, 135);
+     color: white;
+}
+
+nav ul li a{
+text-decoration: none;
+color: rgb(0, 0, 0)
+}
+
+.navbar-toggler {
+  margin-bottom: 15px;
+}
+
+
+
+/* ----------MAIN----------*/
+
+main{
+    background-color: rgb(242, 249, 251);
+    padding: 20px;
+    
+}
+
+.proceso-section, .recibis-section{
+
+    /* Visual */
+    background-color: rgb(207, 220, 223);
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+
+    /* Box model */
+    height: 30vh;
+    padding: 10px;
+
+    /* Layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.plan-section ul {
+    list-style-position: inside;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+.metodo-section{
+    text-align: center;
+}
+
+.metodo-section h2 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #384e50;
+    font-size: 35px;
+    margin: 16px;
+}
+
+.metodo-section h3{
+    margin: 16px auto;
+}
+
+.metodo-section img {
+
+    width: 100%;    max-width: 900px;
+
+}
+
+.servicio-section{
+    /* visual */
+   background-color: #c0e1e3;
+   text-align: center;
+   border-radius: 10px;
+   border: 5px double;
+   list-style-position: inside;
+
+   /* box model */
+    max-width: 900px;
+   width: 90%;
+   padding: 20px;
+   margin: 30px auto;
+}
+
+.servicio-section ol {
+    list-style: none;
+    color: #384c50;
+    font-size: 20px;
+    list-style-position: inside;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+
+.plan-section h3{
+    text-align: center;
+    font-size: 1.4rem;
+
+    letter-spacing: 0.5px;
+    color: #3d4c4d;
+
+    margin-bottom: 0.8rem;
+}
+
+.plan-section ul{
+    list-style: none;
+    text-align: center;
+    line-height: 1.8;
+    
+}
+
+.contendor-img-pesarusa{
+    width: 100%;
+    height: 100%;
+}
+   
+.contendor-img-pesarusa img{
+  width: 100%;
+  max-width: 900px; 
+  display: block;
+  margin: 30px auto;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+.plan-section {
+    margin: 16px;
+    padding: 20px;
+}
+
+
+
+div img{
+    width: 400px;
+}
+
+.empezar{
+    background-color: rgb(220, 236, 245);
+}
+
+
+/*------------FOOTER--------*/
+
+footer{
+    /* visual */
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   background-color: rgb(58, 78, 84);
+   color: white;
+   text-align: center;
+
+   /*box model*/
+   padding: 20px;
+
+}
+
+.lista-footer{
+    list-style: none;
+    list-style-position: inside;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.footer-creditos{
+    color: #ffffff;
+    text-align: center;
+    padding: 14px;
+    font-size: 12px;
+  
+}
+
+/*----------"SOBRE MÍ"---------*/
+
+.sobre-mi-main{
+    background-color: rgb(204, 224, 224);
+}
+
+.titulo-sobre-mi{
+    font-size: 32px;
+    text-align: center;
+    margin: 16px;
+    font-weight: 700;
+}
+
+nav ul{
+    display: flex;
+    gap: 12px; 
+}
+
+.sobre-mi figcaption{
+    font-size: 16px;
+    text-align: center;
+    margin: 16px;
+}
+
+.sobre-mi figcaption p{
+    font-size: 1.1rem;
+  line-height: 1.7;
+  color: #444;
+  max-width: 600px;
+  margin: auto;
+}
+
+.sobre-mi figcaption p::first-letter{
+     font-size: 24px;
+     color: #799899;
+     font-weight: bold;
+}
+
+.como-trabajo{
+    text-align: center;
+    margin: 16px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.trabajo-img img{
+  width: 100%;
+  max-width: 900px;
+  display: block;
+  margin: 30px auto;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.trabajo-img figcaption{
+    text-align: center;
+    background-color: rgb(224, 234, 239);
+    margin: 18px;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.mi-enfoque {
+    text-align: center;
+    Color: #222;
+    letter-spacing: 1px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.enfoque-lista {
+    text-align: center;
+    list-style: none;
+    font-size: 1rem;
+    color: #1a1820;
+    margin-bottom: 16px;
+    list-style-position: inside;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.palabra-personal{
+    background-color: rgb(233, 170, 230);
+    text-align: center;
+    margin: 16px;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+/*-----------GRID----------*/
+
+.especialidades {
+  margin: 10px 5px;
+  padding: 20px 20px;
+  background-color: #f2f2f2;
+  border-radius: 16px;
+}
+
+.grid-bloques {
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/*---MOVILIDAD---*/
+
+.bloque-movilidad {
+    background-color: #cfe3e4;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.bloque-movilidad:hover{
+    transform: translate(-6px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12); 
+}
+
+/*---RESISTENCIA---*/
+
+.bloque-resistencia {
+    background-color: #cfe3e4;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.bloque-resistencia:hover{
+    transform: translate(-6px);
+     box-shadow: 0 8px 18px rgba(0,0,0,0.12); 
+}
+
+/*---FUERZA---*/
+
+.bloque-fuerza {
+    background-color: #cfe3e4;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.bloque-fuerza:hover{
+    transform: translate(-6px);
+     box-shadow: 0 8px 18px rgba(0,0,0,0.12); 
+}
+
+
+/*---HABITOS---*/
+
+.bloque-habitos{
+    background-color: #cfe3e4;
+    grid-column: 1 / 4;
+    border-radius: 12px;
+    padding: 16px;
+
+}
+
+.bloque-habitos:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.12); 
+}
+
+
+/*----------"EMPEZAR" formulario HTML-------*/
+
+.empezar {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.empezar h2{
+    font-weight: 700;
+    padding: 16px;
+}
+
+.form {
+  background-color: #f5f9fa;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.formulario{
+    max-width: 700px;
+    margin: auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.formulario input:focus{
+    outline: none;
+    border-color: #243e5c;
+    box-shadow: 0 0 0 3px rgba(74,144,226,0.15);
+}
+
+.frecuencia legend, .info-fisica legend, .formulario legend, .resultados legend, .experiencia legend{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #333;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+
+.checkbox-fr{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.checkbox-fr input{
+    margin: 0;
+}
+
+.checkbox-ind{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.checkbox-ind:hover{
+    border-color: #888;
+    background: #f9f9f9;
+}
+
+.fisico{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.fisico input:focus{
+    outline: none;
+    border-color: #243e5c;
+   box-shadow: 0 0 0 3px rgba(74,144,226,0.15);
+}
+
+.medidas input:focus {
+    outline: none;
+    border-color: #243e5c;
+     box-shadow: 0 0 0 3px rgba(74,144,226,0.15);
+
+}
+
+.respuestas-result{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.respuestas-result textarea:focus {
+    outline: none;
+    border-color: #243e5c;
+    box-shadow: 0 0 0 3px rgba(74,144,226,0.15);
+}
+
+.boton{
+    margin: 24px;
+    padding: 14px 32px;
+    color: white;
+    background-color: #5d56b9;
+    font-weight: 700;
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
+}
+
+.boton:hover{
+     background-color: #2e1d38;
+     color: rgb(160, 122, 255);
+     box-shadow: 3px 3px 5px
+}
+
+
+/*------------ PLANES -----------*/
+
+.seguimiento{
+    display: flex;
+   
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.seguimiento-imagen{
+    text-align: center;
+}
+
+.seguimiento-imagen h2{
+    font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+  color: #2b2b2b;
+}
+
+.seguimiento-derecha{
+    display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.beneficios{
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 16px;
+}
+
+.beneficios:nth-of-type(1) h3::before {
+    content: "🏋️ ";
+}
+.beneficios:nth-of-type(2) h3::before {
+    content: "🥗 ";
+}
+.beneficios:nth-of-type(3) h3::before {
+    content: "💻 ";
+}
+.beneficios:nth-of-type(4) h3::before {
+    content: "📞 ";
+}
+.beneficios:nth-of-type(5) h3::before {
+    content: "📈 ";
+}
+
+.seguimiento-imagen img{
+    width: 300px;
+}
+
+.beneficios:nth-of-type(4) {
+background-color: rgb(181, 214, 239);
+  
+}
+
+/*--------- RESULTADOS -------*/
+
+.general-resultados{
+    background-color: #eef2f2;
+    
+}
+
+.contenedor-cards {
+        max-width: 900px;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+        margin: 20px auto;
+}
+
+.resultados-alumnos h2{
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: 900;
+    font-size: 32px;
+}
+
+.card-testimonio {
+    padding: 16px 8px;
+    width:  360px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+.card-testimonio h3{
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #243e5c;
+    margin: 10px 0 4px;
+    font-size: 18px;
+}
+
+.card-testimonio p{
+    padding: 15px 20px;
+    font-style: italic;
+    font-size: 13px;
+    color: #444;
+}
+
+.card-testimonio img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.mentalidad-d {
+  background-color: #2a7c6f;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  border-radius: 12px;
+  margin: 50px auto;
+  max-width: 900px;
+}
+
+.mentalidad-d h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.mentalidad-d:hover{
+   background-color: #0f4231;
+     color: rgb(167, 255, 218); 
+     box-shadow: 3px 3px 5px
+}
+
+
+
+/*-------- MEDIAQUERIE sobre mí*/
+
+@media (max-width: 520px){
+
+.grid-bloques {
+  grid-template-columns: 1fr;
+}
+
+.bloque-habitos{
+    grid-column: auto
+}
+
+/*------- planes ------*/
+
+.seguimiento{
+    flex-direction: column;
+}
+
+/*--------- empezar -------*/
+
+.checkbox-fr{
+    display: flex;
+    flex-direction: column;
+}
+
+/*------- resultados ------*/
+.contenedor-cards {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+}
+
+.card-testimonio{
+    width: 100%;
+    max-width: 340px;
+}
+
+.card-testimonio img{
+    height: 200px;
+}
+
+}
