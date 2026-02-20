@@ -1,0 +1,138 @@
+@mixin flex-valores {
+     display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-valores-1{
+    display: flex;
+    align-items: center;
+}
+
+@mixin focus{
+    outline: none;
+    border-color: #243e5c;
+    box-shadow: 0 0 0 3px rgba(74,144,226,0.15);
+}
+
+@mixin card-shadow(  
+  $border-radius: 12px,
+  $box-shadow: 0 8px 25px rgba(0,0,0,0.08)
+) {
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+}
+
+@mixin m-p($margin, $padding){
+    margin: $margin;
+    padding: $padding;
+}
+
+$font-general-empezar: #f5f9fa;
+
+.empezar {
+  max-width: 800px;
+
+  @include m-p(40px auto, 0 20px);
+}
+
+.empezar h2{
+    font-weight: 700;
+    padding: 16px;
+}
+
+.form {
+  background-color: $font-general-empezar;
+  padding: 25px;
+  @include card-shadow;
+}
+
+.formulario{
+    max-width: 700px;
+
+    @include m-p (auto, 30px);
+    background: #ffffff;
+    
+    @include card-shadow;
+}
+
+.formulario input:focus{
+   @include focus;
+}
+
+.frecuencia legend, .info-fisica legend, .formulario legend, .resultados legend, .experiencia legend{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #333;
+}
+
+.campo {
+    @include flex-valores;
+    margin-bottom: 15px;
+}
+
+
+.checkbox-fr{
+    @include flex-valores-1;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.checkbox-fr input{
+    margin: 0;
+}
+
+.checkbox-ind{
+    @include flex-valores-1;
+    gap: 8px;
+
+    @include m-p(null, 10px 14px);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.checkbox-ind:hover{
+    border-color: #888;
+    background: #f9f9f9;
+}
+
+.fisico{
+    @include flex-valores;
+    margin-bottom: 20px;
+}
+
+.fisico input:focus{
+   @include focus;
+}
+
+.medidas input:focus {
+   @include focus;
+
+}
+
+.respuestas-result{
+    @include flex-valores;
+    margin-bottom: 20px;
+}
+
+.respuestas-result textarea:focus {
+   @include focus;
+}
+
+.boton{
+    @include m-p(24px, 14px 32px);
+    background-color: #5d56b9;
+    color: white;
+    font-weight: 700;
+    border: none;
+    
+@include card-shadow(1000px, 0 10px 20px rgba(0, 0, 0, 0.35))
+}
+
+.boton:hover{
+     background-color: #2e1d38;
+     color: rgb(160, 122, 255);
+}
