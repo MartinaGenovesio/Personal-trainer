@@ -1,0 +1,158 @@
+.sobre-mi-main{
+    background-color: rgb(204, 224, 224);
+}
+
+.titulo-sobre-mi{
+    font-size: 32px;
+    text-align: center;
+    margin: 16px;
+    font-weight: 700;
+}
+
+nav ul{
+    display: flex;
+    gap: 12px; 
+}
+
+.sobre-mi figcaption{
+    font-size: 16px;
+    text-align: center;
+    margin: 16px;
+}
+
+.sobre-mi figcaption p{
+    font-size: 1.1rem;
+  line-height: 1.7;
+  color: #444;
+  max-width: 600px;
+  margin: auto;
+}
+
+.sobre-mi figcaption p::first-letter{
+     font-size: 24px;
+     color: #799899;
+     font-weight: bold;
+}
+
+.como-trabajo{
+    text-align: center;
+    margin: 16px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.trabajo-img img{
+  width: 100%;
+  max-width: 900px;
+  display: block;
+  margin: 30px auto;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.trabajo-img figcaption{
+    text-align: center;
+    background-color: rgb(224, 234, 239);
+    margin: 18px;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.mi-enfoque {
+    text-align: center;
+    Color: #222;
+    letter-spacing: 1px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.enfoque-lista {
+    text-align: center;
+    list-style: none;
+    font-size: 1rem;
+    color: #1a1820;
+    margin-bottom: 16px;
+    list-style-position: inside;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.palabra-personal{
+    background-color: rgb(233, 170, 230);
+    text-align: center;
+    margin: 16px;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+/*-----------GRID----------*/
+
+.especialidades {
+  margin: 10px 5px;
+  padding: 20px 20px;
+  background-color: #f2f2f2;
+  border-radius: 16px;
+}
+
+.grid-bloques {
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/*---MOVILIDAD---*/
+
+.bloque-movilidad {
+    background-color: #cfe3e4;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.bloque-movilidad:hover{
+    transform: translate(-6px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12); 
+}
+
+/*---RESISTENCIA---*/
+
+.bloque-resistencia {
+    background-color: #cfe3e4;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.bloque-resistencia:hover{
+    transform: translate(-6px);
+     box-shadow: 0 8px 18px rgba(0,0,0,0.12); 
+}
+
+/*---FUERZA---*/
+
+.bloque-fuerza {
+    background-color: #cfe3e4;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.bloque-fuerza:hover{
+    transform: translate(-6px);
+     box-shadow: 0 8px 18px rgba(0,0,0,0.12); 
+}
+
+
+/*---HABITOS---*/
+
+.bloque-habitos{
+    background-color: #cfe3e4;
+    grid-column: 1 / 4;
+    border-radius: 12px;
+    padding: 16px;
+
+}
+
+.bloque-habitos:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.12); 
+}

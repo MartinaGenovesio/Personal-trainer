@@ -1,0 +1,55 @@
+.seguimiento{
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+
+}
+
+.seguimiento-imagen{
+    text-align: center;
+}
+
+.seguimiento-imagen h2{
+    font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+  color: #2b2b2b;
+}
+
+.seguimiento-derecha{
+    display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.beneficios{
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 16px;
+}
+
+.beneficios:nth-of-type(1) h3::before {
+    content: "🏋️ ";
+}
+.beneficios:nth-of-type(2) h3::before {
+    content: "🥗 ";
+}
+.beneficios:nth-of-type(3) h3::before {
+    content: "💻 ";
+}
+.beneficios:nth-of-type(4) h3::before {
+    content: "📞 ";
+}
+.beneficios:nth-of-type(5) h3::before {
+    content: "📈 ";
+}
+
+.seguimiento-imagen img{
+    width: 300px;
+}
+
+.beneficios:nth-of-type(4) {
+background-color: rgb(181, 214, 239);
+  
+}
