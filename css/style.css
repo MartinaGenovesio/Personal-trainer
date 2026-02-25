@@ -31,23 +31,27 @@ nav ul {
 }
 
 nav ul li {
+  display: flex;
+  flex-direction: none;
+  justify-content: none;
+  align-items: center;
+  display: flex;
+  align-items: center;
   list-style: none;
   text-align: center;
   background-color: rgb(203, 236, 235);
   padding: 10px;
   border-radius: 10px;
-  display: flex;
-  align-items: center;
 }
 
 nav ul li:hover {
   background-color: rgb(78, 137, 135);
-  /* color: white; */
+  color: white;
 }
 
 nav ul li a {
   text-decoration: none;
-  /* color: rgb(0, 0, 0) */
+  color: rgb(0, 0, 0);
 }
 
 .navbar-toggler {
@@ -74,13 +78,13 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 16px;
 }
 
 .plan-section ul {
   list-style-position: inside;
-  padding: 0;
   margin: 10px 0 0 0;
+  padding: 0;
 }
 
 .metodo-section {
@@ -113,8 +117,8 @@ main {
   /* box model */
   max-width: 900px;
   width: 90%;
-  padding: 20px;
   margin: 30px auto;
+  padding: 20px;
 }
 
 .servicio-section ol {
@@ -122,15 +126,15 @@ main {
   color: #384c50;
   font-size: 20px;
   list-style-position: inside;
-  padding: 0;
   margin: 10px 0 0 0;
+  padding: 0;
 }
 
 .plan-section h3 {
   text-align: center;
   font-size: 1.4rem;
   letter-spacing: 0.5px;
-  color: #384c50;
+  color: #3d4c4d;
   margin-bottom: 0.8rem;
 }
 
@@ -181,8 +185,8 @@ footer {
 .lista-footer {
   list-style: none;
   list-style-position: inside;
-  padding: 0;
   margin: 10px 0 0 0;
+  padding: 0;
 }
 
 .footer-creditos {
@@ -361,14 +365,14 @@ nav ul {
   background-color: #f5f9fa;
   padding: 25px;
   border-radius: 12px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .formulario {
   max-width: 700px;
   margin: auto;
-  padding: 30px;
   background: #ffffff;
+  padding: 30px;
   border-radius: 12px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
@@ -389,6 +393,8 @@ nav ul {
 .campo {
   display: flex;
   flex-direction: column;
+  justify-content: none;
+  align-items: none;
   margin-bottom: 15px;
 }
 
@@ -423,7 +429,7 @@ nav ul {
 .fisico {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
+  bottom: 20px;
 }
 
 .fisico input:focus {
@@ -453,8 +459,8 @@ nav ul {
 .boton {
   margin: 24px;
   padding: 14px 32px;
-  background-color: #5d56b9;
   color: white;
+  background-color: #5d56b9;
   font-weight: 700;
   border: none;
   border-radius: 1000px;
@@ -464,13 +470,14 @@ nav ul {
 .boton:hover {
   background-color: #2e1d38;
   color: rgb(160, 122, 255);
+  box-shadow: 3px 3px 5px;
 }
 
 /*------------ PLANES -----------*/
 .seguimiento {
   display: flex;
-  align-items: flex-start;
   gap: 40px;
+  align-items: flex-start;
 }
 
 .seguimiento-imagen {
@@ -534,8 +541,8 @@ nav ul {
   max-width: 900px;
   padding: 20px;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 25px;
   margin: 20px auto;
 }
