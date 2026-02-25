@@ -6,52 +6,58 @@
 }
 
 /*-------ESTILOS GENERALES------*/
+.mi-header {
+  background: linear-gradient(135deg, #d7ecee 0%, #c4e1e3 50%, #eaf6f7 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.mi-header h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: oblique;
+  font-size: 1.8rem;
+  color: #2f4f52;
+  margin: 0;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: oblique;
+}
+
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header {
-  background-color: rgb(155, 196, 189);
+  background-color: rgb(163, 214, 205);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2vh 4vw;
 }
 
-h1 {
-  text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-style: oblique;
-}
-
 /*----------NAVEGACIÓN-------*/
-nav ul {
+.navbar-nav {
   display: flex;
   gap: 12px;
 }
 
-nav ul li {
-  display: flex;
-  flex-direction: none;
-  justify-content: none;
-  align-items: center;
+.navbar-nav .nav-link {
   display: flex;
   align-items: center;
-  list-style: none;
-  text-align: center;
+  justify-content: center;
   background-color: rgb(203, 236, 235);
-  padding: 10px;
+  padding: 8px 14px;
   border-radius: 10px;
+  text-decoration: none;
+  color: black;
+  transition: 0.3s ease;
 }
 
-nav ul li:hover {
+.navbar-nav .nav-link:hover {
   background-color: rgb(78, 137, 135);
   color: white;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: rgb(0, 0, 0);
 }
 
 .navbar-toggler {
@@ -60,25 +66,39 @@ nav ul li a {
 
 /* ----------MAIN----------*/
 main {
-  background-color: rgb(242, 249, 251);
-  padding: 20px;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #e8f4f5 0%, #d7ecee 40%, #f4f8f9 100%);
 }
 
-.proceso-section, .recibis-section {
-  /* Visual */
+.proceso-section,
+.metodo-section,
+.servicio-section,
+.plan-section {
   background-color: rgb(207, 220, 223);
-  font-size: 20px;
-  text-align: center;
-  border-radius: 10px;
-  /* Box model */
-  height: 30vh;
-  padding: 10px;
+  border-radius: 12px;
+  padding: 25px;
+  margin: 30px auto;
+  max-width: 900px;
+  width: 90%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   /* Layout */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+}
+
+.proceso-section {
+  text-align: center;
+}
+.proceso-section h2 {
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+  color: #384e50;
+}
+.proceso-section p {
+  font-size: 18px;
+  opacity: 0.9;
 }
 
 .plan-section ul {
@@ -94,8 +114,9 @@ main {
 .metodo-section h2 {
   font-family: "Times New Roman", Times, serif;
   color: #384e50;
-  font-size: 35px;
-  margin: 16px;
+  font-size: 32px;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
 }
 
 .metodo-section h3 {
@@ -104,7 +125,16 @@ main {
 
 .metodo-section img {
   width: 100%;
-  max-width: 900px;
+  max-width: 800px;
+  border-radius: 10px;
+  margin: 20px auto;
+  display: block;
+}
+
+.metodo-section p {
+  max-width: 650px;
+  margin: 6px auto;
+  line-height: 1.6;
 }
 
 .servicio-section {
@@ -112,7 +142,7 @@ main {
   background-color: #c0e1e3;
   text-align: center;
   border-radius: 10px;
-  border: 5px double;
+  border: 5px;
   list-style-position: inside;
   /* box model */
   max-width: 900px;
@@ -121,11 +151,18 @@ main {
   padding: 20px;
 }
 
+.servicio-section h3 {
+  margin-bottom: 10px;
+  color: #384c50;
+}
+
 .servicio-section ol {
   list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 1.9;
+  font-size: 18px;
   color: #384c50;
-  font-size: 20px;
-  list-style-position: inside;
   margin: 10px 0 0 0;
   padding: 0;
 }
@@ -154,17 +191,26 @@ main {
   max-width: 900px;
   display: block;
   margin: 30px auto;
-  border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
 }
 
 .plan-section {
+  text-align: center;
   margin: 16px;
   padding: 20px;
 }
 
-div img {
-  width: 400px;
+.plan-section h3 {
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  color: #3d4c4d;
+}
+
+.plan-section ul {
+  list-style: none;
+  padding: 0;
+  line-height: 1.9;
+  font-size: 18px;
 }
 
 .empezar {
