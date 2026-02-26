@@ -690,3 +690,40 @@ background-color: rgb(181, 214, 239);
 }
 
 }
+
+.sobre-mi-main {
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.sobre-mi {
+    max-width: 800px;
+    width: 100%;
+    padding: 50px 40px;
+    border-radius: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sobre-mi__titulo {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    font-weight: 700;
+    color: #2c3e3e;
+}
+
+.sobre-mi__texto p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #444;
+    margin: 0 auto;
+}
+
+
+ <section class="mentalidad-d">
+  <h2>La constancia supera a la motivación</h2>
+  <p>
+    No siempre vas a tener ganas de entrenar, pero crear el hábito es lo que realmente genera resultados a largo plazo.
+  </p>
+</section> 
