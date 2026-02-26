@@ -123,12 +123,10 @@ main {
   margin: 16px auto;
 }
 
-.metodo-section img {
+.carousel-item img {
+  height: 400px;
+  object-fit: cover;
   width: 100%;
-  max-width: 800px;
-  border-radius: 10px;
-  margin: 20px auto;
-  display: block;
 }
 
 .metodo-section p {
@@ -414,6 +412,7 @@ nav ul {
 
 .como-trabajo {
   margin-top: 20px;
+  margin: 0 auto;
   text-align: center;
   padding: 20px;
   font-size: 24px;
@@ -437,6 +436,7 @@ nav ul {
 }
 
 .como-trabajo-parrafo {
+  margin: 0 auto;
   padding-bottom: 60px;
   max-width: 700px;
   padding: 40px 30px 60px;
@@ -589,6 +589,15 @@ nav ul {
   color: #333;
 }
 
+.caja-entrenamiento, .caja-info-fisica, .caja-resultados, .caja-experiencia {
+  max-width: 700px;
+  margin: 20px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
 .campo {
   display: flex;
   flex-direction: column;
@@ -623,6 +632,10 @@ nav ul {
 .checkbox-ind:hover {
   border-color: #888;
   background: #f9f9f9;
+}
+
+.form-group, .form-floating {
+  margin-bottom: 20px;
 }
 
 .fisico {
@@ -670,7 +683,7 @@ nav ul {
 .btn {
   background-color: #005cbf;
   padding: 14px 40px;
-  margin-top: 30px;
+  margin: 10px 10%;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 2px;

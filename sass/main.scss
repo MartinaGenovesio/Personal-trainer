@@ -174,12 +174,11 @@ main {
     margin: 16px auto;
 }
 
-.metodo-section img {
+
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
     width: 100%;
-    max-width: 800px;
-    border-radius: 10px;
-    margin: 20px auto;
-    display: block;
 }
 
 
@@ -479,6 +478,7 @@ nav ul{
 
 .como-trabajo{
     margin-top: 20px;
+    margin: 0 auto;
     text-align: center;
     padding: 20px;
     font-size: 24px;
@@ -501,6 +501,7 @@ nav ul{
 }
 
 .como-trabajo-parrafo{
+    margin: 0 auto;
        padding-bottom: 60px;
        max-width: 700px;
     padding: 40px 30px 60px;
@@ -665,6 +666,15 @@ background: linear-gradient(90deg, rgba(166, 161, 255, 0.6) 0%, rgba(0, 212, 255
     color: #333;
 }
 
+.caja-entrenamiento, .caja-info-fisica, .caja-resultados, .caja-experiencia{
+    max-width: 700px;
+    margin: 20px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
 .campo {
     @include flex-valores(flex, column, none, none);
     margin-bottom: 15px;
@@ -697,6 +707,10 @@ background: linear-gradient(90deg, rgba(166, 161, 255, 0.6) 0%, rgba(0, 212, 255
 .checkbox-ind:hover{
     border-color: #888;
     background: #f9f9f9;
+}
+
+.form-group, .form-floating {
+    margin-bottom: 20px
 }
 
 .fisico{
@@ -743,7 +757,7 @@ background: linear-gradient(90deg, rgba(166, 161, 255, 0.6) 0%, rgba(0, 212, 255
 .btn {
  background-color: #005cbf;
  padding: 14px 40px;
- margin-top: 30px;
+ margin: 10px 10%;
  color: #fff;
  text-transform: uppercase;
  letter-spacing: 2px;

@@ -49,27 +49,28 @@
 <form>
   <fieldset class="formulario">
     <legend>Datos básicos</legend>
-    <div class="campo">
-      <label for="name_form">Nombre</label>
-      <input type="text" id="name_form" required>
-    </div>
+        <div class="form-floating">
+            <label for="height">Nombre</label>
+            <input type="text" id="height"  class="form-control">
+        </div>
 
-    <div class="campo">
-      <label for="lastname_form">Apellido</label>
-      <input type="text" id="lastname_form" required>
-    </div>
+         <div class="form-floating">
+            <label for="height">Apellido</label>
+            <input type="text" id="height"  class="form-control">
+        </div>
 
-    <div class="campo">
-      <label for="Email">Email</label>
-      <input type="text" id="Email" placeholder="Gmail.com">
-    </div>
+        <div class="form-floating">
+            <label for="height">Email</label>
+            <input type="text" id="height"  class="form-control">
+        </div>
 
-    <div class="campo">
-      <label for="number_phone">Número de telefono</label>
-      <input type="text" id="number_phone" placeholder="+54 9 3456 1234-567">
-    </div>
+        <div class="form-floating">
+            <label for="height">Número de telefono</label>
+            <input type="text" id="height"  class="form-control">
+        </div>
   </fieldset>
 
+    <div class="caja-entrenamiento">
     <fieldset class="frecuencia">
       <legend>Frecuencia de entrenamiento</legend>
       <div class="checkbox-fr">
@@ -100,25 +101,28 @@
         </div>
 
       </div>
+    </div>
     </fieldset>
 
+    <div class="caja-info-fisica">
     <fieldset class="info-fisica">
         <legend>Información física</legend>
     
-        <div class="fisico">
+        <div class="form-floating">
             <label for="height">Altura</label>
-            <input type="text" id="height">
+            <input type="text" id="height"  class="form-control">
         </div>
-        <div class="fisico">
-            <label for="weight">Peso actual</label>
-            <input type="text" id="weight">
+        <div class="form-floating">
+            <label for="height">Peso actual</label>
+            <input type="text" id="height"  class="form-control">
         </div>
-        <div class="fisico">
-            <label for="measures">Medidas</label>
-            <input type="text" id="measures">
+<div class="form-floating">
+            <label for="height">Medidas</label>
+            <input type="text" id="height"  class="form-control">
         </div>
     </fieldset>
-
+   </div>
+    <div class="caja-resultados">
     <fieldset class="resultados">
         <legend>Qué resultados esperas ver/notar/sentir al cabo de un mes de entrenamiento?</legend>
 
@@ -126,7 +130,9 @@
         <textarea name="resultados" id="resultados" placeholder="contame tus expectativas"></textarea>
        </div>
     </fieldset>
+    </div>
 
+    <div class="caja-resultados">
     <fieldset class="resultados">
         <legend>Tenes lesiones, molestias o limitaciones funcionales medicas a tener en cuenta?</legend>
 
@@ -134,7 +140,9 @@
         <textarea name="lesiones" id="lesiones" placeholder="Pueden ser lesiones actuales/recientes o de varios años"></textarea>
         </div>
     </fieldset>
-    
+     </div>
+
+      <div class="caja-experiencia">
     <fieldset class="experiencia">
       <legend>Tenes experiencia previa entrenando?</legend>
       <div class="checkbox-fr">
@@ -157,6 +165,7 @@
         <div>
         </div>
     </fieldset>
+    </div>
     </div>
 
 
