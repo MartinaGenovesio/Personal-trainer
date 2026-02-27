@@ -1,4 +1,14 @@
+@use '../utilities/variables' as *;
 @use '../utilities/mixins' as *;
+
+
+
+footer{
+   background-color: $bg-footer;
+   color: $color-tipografia;
+   text-align: center;
+   padding: 20px;
+}
 
 
 footer .lista-footer {

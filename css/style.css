@@ -29,10 +29,6 @@ body {
 
 footer {
   font-family: Georgia, "Times New Roman", Times, serif;
-  background-color: rgb(58, 78, 84);
-  color: white;
-  text-align: center;
-  padding: 20px;
 }
 
 .resultados-alumnos h2 {
@@ -89,6 +85,13 @@ header {
 
 main {
   padding: 40px 20px;
+}
+
+footer {
+  background-color: rgb(58, 78, 84);
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
 
 footer .lista-footer {
