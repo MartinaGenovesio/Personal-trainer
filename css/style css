@@ -91,27 +91,6 @@ main {
   padding: 40px 20px;
 }
 
-footer .lista-footer {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  margin: 10px 0 0 0;
-  padding: 0;
-}
-
-.footer-creditos {
-  color: #ffffff;
-  text-align: center;
-  padding: 14px;
-  font-size: 12px;
-}
-
-.lista-footer li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
 .proceso-section,
 .metodo-section,
 .servicio-section,
@@ -917,4 +896,4 @@ nav ul {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style%20css.map */
