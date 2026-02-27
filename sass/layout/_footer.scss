@@ -1,0 +1,16 @@
+@use '../utilities/mixins' as *;
+
+
+.lista-footer{
+    list-style: none;
+    list-style-position: inside;
+     @include marg-padg(10px 0 0 0, 0);
+}
+
+.footer-creditos{
+    color: #ffffff;
+    text-align: center;
+    padding: 14px;
+    font-size: 12px;
+  
+}

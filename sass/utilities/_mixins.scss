@@ -1,0 +1,33 @@
+@mixin marg-padg($margin, $padding){
+    margin: $margin;
+    padding: $padding;
+}
+  @mixin block-valores{
+      display: block;
+  margin: 30px auto;
+  }
+@mixin flex-valores($display, $flex-direction, $justify-content, $align-items){
+    display: $display;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+    @mixin flex-column{
+    display: flex;
+    flex-direction: column;
+    }
+
+@mixin medidas-sobremi-cards{
+    padding-bottom: 60px;
+    max-width: 700px;
+    margin: 0 auto;   
+    padding: 40px 30px 60px;
+    border-radius: 20px;
+}    
+
+@mixin checkbox-fr{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
