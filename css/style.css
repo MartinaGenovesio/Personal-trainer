@@ -5,7 +5,6 @@
   box-sizing: border-box;
 }
 
-/*-------ESTILOS GENERALES------*/
 .mi-header {
   background: linear-gradient(135deg, #d7ecee 0%, #c4e1e3 50%, #eaf6f7 100%);
   display: flex;
@@ -113,7 +112,7 @@ main {
 
 .metodo-section h2 {
   font-family: "Times New Roman", Times, serif;
-  color: #384e50;
+  color: #2c3e3e;
   font-size: 32px;
   margin-bottom: 15px;
   letter-spacing: 1px;
@@ -130,6 +129,7 @@ main {
 }
 
 .carousel-item img {
+  width: 100%;
   max-width: 900px;
   height: 500px;
   object-fit: cover;
@@ -196,6 +196,19 @@ main {
   line-height: 1.8;
 }
 
+.contendor-img-pesarusa {
+  width: 100%;
+  height: 100%;
+}
+
+.contendor-img-pesarusa img {
+  width: 100%;
+  max-width: 900px;
+  display: block;
+  margin: 30px auto;
+  border-radius: 12px;
+}
+
 .plan-section {
   text-align: center;
   width: 90%;
@@ -217,7 +230,7 @@ main {
   font-size: 18px;
 }
 
-/* From Uiverse.io by Yaya12085 */
+/* (sacado de internet) */
 .plan {
   border-radius: 16px;
   box-shadow: 0 30px 30px -25px rgba(0, 38, 255, 0.205);
@@ -225,7 +238,8 @@ main {
   background-color: #fff;
   color: #697e91;
   max-width: 300px;
-  margin: 40px auto;
+  margin: 40px 0;
+  flex: 0 1 300px;
 }
 
 .plan strong {
@@ -300,6 +314,7 @@ main {
   border-radius: 50%;
   width: 20px;
   height: 20px;
+  flex: 0 0 20px;
 }
 
 .plan .features .icon svg {
@@ -336,6 +351,24 @@ main {
   background-color: #4133B7;
 }
 
+.planes {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  animation: aparecerCard 2s ease-out forwards;
+}
+
+@keyframes aparecerCard {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /*------------FOOTER--------*/
 footer {
   /* visual */
@@ -366,14 +399,14 @@ footer {
   padding: 60px 20px;
 }
 
-.sobre-mi__titulo {
+.sobre-mi_h2 {
   font-size: 32px;
   text-align: center;
   font-weight: 700;
   color: #2c3e3e;
 }
 
-.sobre-mi__titulo::after {
+.sobre-mi_h2::after {
   content: "";
   width: 60px;
   height: 4px;
@@ -383,7 +416,7 @@ footer {
   border-radius: 2px;
 }
 
-.sobre-mi__texto p {
+.sobre-mi-texto p {
   font-size: 1.1rem;
   line-height: 1.8;
   color: #444;
@@ -392,7 +425,7 @@ footer {
   text-align: center;
 }
 
-.sobre-mi__texto p strong {
+.sobre-mi-texto p strong {
   color: #799899;
 }
 
@@ -574,7 +607,7 @@ nav ul {
 .formulario {
   max-width: 700px;
   margin: auto;
-  background: #ffffff;
+  background: #f5f9fa;
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
@@ -596,7 +629,7 @@ nav ul {
 .caja-entrenamiento, .caja-info-fisica, .caja-resultados, .caja-experiencia {
   max-width: 700px;
   margin: 20px auto;
-  background: #ffffff;
+  background: #f5f9fa;
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
@@ -670,17 +703,6 @@ nav ul {
   outline: none;
   border-color: #243e5c;
   box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.15);
-}
-
-.boton {
-  margin: 24px;
-  padding: 14px 32px;
-  color: white;
-  background-color: #5d56b9;
-  font-weight: 700;
-  border: none;
-  border-radius: 1000px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
 }
 
 /* From Uiverse.io by Shakil-Babu */
@@ -818,7 +840,7 @@ nav ul {
   padding: 15px 20px;
   font-style: italic;
   font-size: 13px;
-  color: #444;
+  color: #403e3e;
 }
 
 .card-testimonio img {
@@ -836,7 +858,7 @@ nav ul {
   border-radius: 12px;
   margin: 50px auto;
   max-width: 900px;
-  animation: aparecerCard 3s ease-out forwards;
+  animation: aparecerCard 5.5s ease-out forwards;
 }
 
 @keyframes aparecerCard {
@@ -867,6 +889,10 @@ nav ul {
   }
   .bloque-habitos {
     grid-column: auto;
+  }
+  /*-------- sobre mí -----*/
+  .card-enfoque {
+    max-width: 340px;
   }
   /*------- planes ------*/
   .seguimiento {

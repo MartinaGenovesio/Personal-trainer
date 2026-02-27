@@ -1,8 +1,53 @@
 $bg-header: rgb(163, 214, 205);
+$bg-mi-header: linear-gradient(135deg, #d7ecee 0%, #c4e1e3 50%, #eaf6f7 100%);
+$mi-header-h1: #2f4f52;
 $bg-nav: rgb(203, 236, 235);
 $bg-nav-hover: rgb(78, 137, 135);
-$h1-general: Verdana, Geneva, Tahoma, sans-serif;
 $bg-main-visual: rgb(207, 220, 223);
+$color-proceso-section: #384e50;
+$color-h2: #384e50;
+$bg-servicio-section: #c0e1e3;
+$color-h3: #384c50;
+$bg-body: linear-gradient(135deg,
+            #e8f4f5 0%,
+            #d7ecee 40%,
+            #f4f8f9 100%);
+
+            
+$bg-footer: rgb(58, 78, 84);
+$color-tipografia: white;
+$font-family-footer: Georgia, 'Times New Roman', Times, serif;
+
+$bg-cajas: #f5f9fa; 
+
+
+$color-h2: #2c3e3e;
+$color-texto-tomas-nieto: #799899;
+$color-texto:  #444;
+$bg-card-enfoque: linear-gradient(90deg, rgba(166, 161, 255, 0.6) 0%, rgba(0, 212, 255, 0.41) 100%);
+$bg-card-palabrapersonal: rgb(233, 170, 230);
+
+
+$bg-boton: #005cbf;
+$color-boton: #fff;
+$color-border-boton: #2d00bf;
+$color-shadow-boton: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+$font-family-resultados-h2: Arial, Helvetica, sans-serif;
+$color-h2-testimonios: #2c3e3e;
+$bg-card-testimonios: #f5f5f5;
+$shadow-card-testimonios: 0 8px 20px rgba(0, 0, 0, 0.8);
+$font-h3-testimonios: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+$color-font-h3-testimonios: #243e5c;
+$color-p-testimonios: #403e3e;
+$bg-card-mentalidad: #2a7c6f;
+$color-font-mentalidad: white;
+
+
+$h1-general: Verdana, Geneva, Tahoma, sans-serif;
+$font-family-h2: 'Times New Roman', Times, serif;            
+$font-family-body: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 
 @mixin marg-padg($margin, $padding){
     margin: $margin;
@@ -29,13 +74,8 @@ $bg-main-visual: rgb(207, 220, 223);
     box-sizing: border-box;
 }
 
-
-/*-------ESTILOS GENERALES------*/
-
 .mi-header {
-
-    background: linear-gradient(135deg, #d7ecee 0%, #c4e1e3 50%, #eaf6f7 100%);
-
+    background: $bg-mi-header;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,7 +87,7 @@ $bg-main-visual: rgb(207, 220, 223);
     font-family: $h1-general;
     font-style: oblique;
     font-size: 1.8rem;
-    color: #2f4f52;
+    color: $mi-header-h1;
 
     margin: 0;
         text-align: center;
@@ -55,16 +95,10 @@ $bg-main-visual: rgb(207, 220, 223);
     font-style: oblique;
 }
 
-body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background: linear-gradient(
-        135deg,
-        #e8f4f5 0%,
-        #d7ecee 40%,
-        #f4f8f9 100%
-    );
-    }
-
+body {
+    font-family: $font-family-body;
+    background: $bg-body;
+}
 header{
     background-color: $bg-header;
     display: flex;
@@ -143,7 +177,7 @@ main {
     h2 {
         margin-bottom: 10px;
         font-size: 1.6rem;
-        color: #384e50;
+        color: $color-proceso-section;
     }
 
     p {
@@ -163,8 +197,8 @@ main {
 }
 
 .metodo-section h2 {
-    font-family: 'Times New Roman', Times, serif;
-    color: #384e50;
+    font-family: $font-family-h2;
+    color: $color-h2;
     font-size: 32px;
     margin-bottom: 15px;
     letter-spacing: 1px;
@@ -182,6 +216,7 @@ main {
 
 
 .carousel-item img {
+    width: 100%;
     max-width: 900px;
     height: 500px;       
     object-fit: cover;    
@@ -207,10 +242,9 @@ main {
 }
 
 
-
 .servicio-section{
     /* visual */
-   background-color: #c0e1e3;
+   background-color: $bg-servicio-section;
    text-align: center;
    border-radius: 10px;
    border: 5px;
@@ -225,7 +259,7 @@ main {
 
 .servicio-section h3 {
     margin-bottom: 10px;
-    color: #384c50;
+    color: $color-h3;
 }
 
 .servicio-section ol {
@@ -256,6 +290,17 @@ main {
     
 }
 
+.contendor-img-pesarusa{
+    width: 100%;
+    height: 100%;
+}
+   
+.contendor-img-pesarusa img{
+  width: 100%;
+  max-width: 900px; 
+@include block-valores;
+  border-radius: 12px
+}
 
 
 .plan-section {
@@ -280,8 +325,7 @@ main {
     font-size: 18px;
 }
 
-
-/* From Uiverse.io by Yaya12085 */ 
+/* (sacado de internet) */
 .plan {
   border-radius: 16px;
   box-shadow: 0 30px 30px -25px rgba(0, 38, 255, 0.205);
@@ -289,8 +333,8 @@ main {
   background-color: #fff;
   color: #697e91;
   max-width: 300px;
-  margin: 40px auto;
-  
+  margin: 40px 0;
+   flex: 0 1 300px
 }
 
 .plan strong {
@@ -365,6 +409,7 @@ main {
   border-radius: 50%;
   width: 20px;
   height: 20px;
+   flex: 0 0 20px;
 }
 
 .plan .features .icon svg {
@@ -401,13 +446,34 @@ main {
   background-color: #4133B7;
 }
 
+.planes {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap; 
+
+  animation: aparecerCard 2s ease-out forwards;
+}
+
+@keyframes aparecerCard {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /*------------FOOTER--------*/
 
 footer{
     /* visual */
-   font-family: Georgia, 'Times New Roman', Times, serif;
-   background-color: rgb(58, 78, 84);
-   color: white;
+   font-family: $font-family-footer;
+   background-color: $bg-footer;
+   color: $color-tipografia;
    text-align: center;
 
    /*box model*/
@@ -431,19 +497,20 @@ footer{
 
 /*----------"SOBRE MÍ"---------*/
 
+
 .sobre-mi-main{
     padding: 60px 20px;
 }
 
-.sobre-mi__titulo{
+.sobre-mi_h2{
     font-size: 32px;
     text-align: center;
     font-weight: 700;
-    color: #2c3e3e;
+    color: $color-h2;
 
 }
 
-.sobre-mi__titulo::after {
+.sobre-mi_h2::after {
     content: "";
     width: 60px;
     height: 4px;
@@ -453,7 +520,7 @@ footer{
     border-radius: 2px;
 }
 
-.sobre-mi__texto p {
+.sobre-mi-texto p {
     font-size: 1.1rem;
     line-height: 1.8;
     color: #444;
@@ -462,8 +529,8 @@ footer{
   text-align: center;
 }
 
-.sobre-mi__texto p strong {
-    color: #799899;
+.sobre-mi-texto p strong {
+    color: $color-texto-tomas-nieto;
 }
 
 nav ul{
@@ -480,7 +547,7 @@ nav ul{
 .sobre-mi figcaption p{
     font-size: 1.1rem;
   line-height: 1.7;
-  color: #444;
+  color: $color-texto;
   max-width: 600px;
 }
 
@@ -527,7 +594,7 @@ nav ul{
     box-shadow: 0 15px 40px rgba(0,0,0,0.08);
 
     background: #a6a1ff;
-background: linear-gradient(90deg, rgba(166, 161, 255, 0.6) 0%, rgba(0, 212, 255, 0.41) 100%);
+background: $bg-card-enfoque;
 }
 
 
@@ -551,7 +618,7 @@ background: linear-gradient(90deg, rgba(166, 161, 255, 0.6) 0%, rgba(0, 212, 255
 }
 
 .palabra-personal{
-    background-color: rgb(233, 170, 230);
+    background-color: $bg-card-palabrapersonal;
     text-align: center;
     margin: 16px;
     padding: 16px;
@@ -634,6 +701,8 @@ background: linear-gradient(90deg, rgba(166, 161, 255, 0.6) 0%, rgba(0, 212, 255
 
 
 /*----------"EMPEZAR" formulario HTML-------*/
+$bg-cajas: #f5f9fa; 
+
 
 .empezar {
   max-width: 800px;
@@ -646,7 +715,7 @@ background: linear-gradient(90deg, rgba(166, 161, 255, 0.6) 0%, rgba(0, 212, 255
 }
 
 .form {
-  background-color: #f5f9fa;
+  background-color: $bg-cajas;
   padding: 25px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
@@ -655,7 +724,7 @@ background: linear-gradient(90deg, rgba(166, 161, 255, 0.6) 0%, rgba(0, 212, 255
 .formulario{
     max-width: 700px;
     margin: auto;
-    background: #ffffff;
+    background: $bg-cajas;
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 8px 25px rgba(0,0,0,0.08);
@@ -677,7 +746,7 @@ background: linear-gradient(90deg, rgba(166, 161, 255, 0.6) 0%, rgba(0, 212, 255
 .caja-entrenamiento, .caja-info-fisica, .caja-resultados, .caja-experiencia{
     max-width: 700px;
     margin: 20px auto;
-    background: #ffffff;
+    background: $bg-cajas;
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 8px 25px rgba(0,0,0,0.08);
@@ -750,29 +819,19 @@ background: linear-gradient(90deg, rgba(166, 161, 255, 0.6) 0%, rgba(0, 212, 255
     box-shadow: 0 0 0 3px rgba(74,144,226,0.15);
 }
 
-.boton{
-    margin: 24px;
-    padding: 14px 32px;
-    color: white;
-    background-color: #5d56b9;
-    font-weight: 700;
-    border: none;
-    border-radius: 1000px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
-}
 
 /* From Uiverse.io by Shakil-Babu */ 
 .btn {
- background-color: #005cbf;
+ background-color: $bg-boton;
  padding: 14px 40px;
  margin: 10px 10%;
- color: #fff;
+ color: $color-boton;
  text-transform: uppercase;
  letter-spacing: 2px;
  cursor: pointer;
  border-radius: 10px;
- border: 2px dashed #2d00bf;
- box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+ border: 2px dashed $color-border-boton;
+ box-shadow: $color-shadow-boton;
  transition: .4s;
 }
 
@@ -870,27 +929,29 @@ background-color: rgb(181, 214, 239);
 
 .resultados-alumnos h2{
     margin-top: 15px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: $font-family-resultados-h2;
     text-align: center;
     font-weight: 900;
     font-size: 28px;
-    color: #2c3e3e;
+    color: $color-h2;
 }
+
+
 
 .card-testimonio {
     padding: 16px 8px;
     width:  360px;
     margin-bottom: 20px;
-    background-color: #f5f5f5;
+    background-color: $bg-card-testimonios;
     border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+    box-shadow: $shadow-card-testimonios;
     text-align: center;
 }
 
 .card-testimonio h3{
     text-align: center;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: #243e5c;
+    font-family: $font-h3-testimonios;
+    color: $color-font-h3-testimonios;
     margin: 10px 0 4px;
     font-size: 18px;
 }
@@ -899,7 +960,7 @@ background-color: rgb(181, 214, 239);
     padding: 15px 20px;
     font-style: italic;
     font-size: 13px;
-    color: #444;
+    color: $color-p-testimonios;
 }
 
 .card-testimonio img{
@@ -910,15 +971,15 @@ background-color: rgb(181, 214, 239);
 }
 
 .mentalidad-d {
-  background-color: #2a7c6f;
-  color: white;
+  background-color: $bg-card-mentalidad;
+  color: $color-font-mentalidad;
   text-align: center;
   padding: 50px 20px;
   border-radius: 12px;
   margin: 50px auto;
   max-width: 900px;
 
-  animation: aparecerCard 3s ease-out forwards;
+  animation: aparecerCard 5.5s ease-out forwards;
 }
 
 @keyframes aparecerCard {
@@ -956,6 +1017,12 @@ background-color: rgb(181, 214, 239);
 
 .bloque-habitos{
     grid-column: auto
+}
+
+/*-------- sobre mí -----*/
+
+.card-enfoque{
+       max-width: 340px;
 }
 
 /*------- planes ------*/
