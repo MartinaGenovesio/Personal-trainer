@@ -189,7 +189,7 @@
 .plan .inner {
   align-items: center;
   padding: 20px;
-  padding-top: 40px;
+  padding-top: 70px;
   background-color: #ecf0ff;
   border-radius: 12px;
   position: relative;
@@ -272,6 +272,8 @@
   justify-content: end;
 }
 
+
+
 .plan .button {
   background-color: #6558d3;
   border-radius: 6px;
@@ -299,6 +301,8 @@
   animation: aparecerCard 2s ease-out forwards;
 }
 
+
+
 @keyframes aparecerCard {
     from {
         opacity: 0;
@@ -309,4 +313,5 @@
         opacity: 1;
         transform: translateY(0);
     }
-}
+  }
+
