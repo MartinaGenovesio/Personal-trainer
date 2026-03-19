@@ -3,30 +3,52 @@
 
 
 
-footer{
-   background-color: $bg-footer;
-   color: $color-tipografia;
-   text-align: center;
-   padding: 20px;
+footer {
+  background-color: $footer-bg;
+  color: $footer-text;
+  padding: 40px 20px 0 20px;
 }
 
-
-footer .lista-footer {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    @include marg-padg(10px 0 0 0, 0);
+.contenedor-footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 30px;
 }
 
-.footer-creditos {
-    color: #ffffff;
-    text-align: center;
-    padding: 14px;
-    font-size: 12px;
+.footer-section h4 {
+  color: $footer-text;
+  margin-bottom: 10px;
+}
+
+.lista-footer {
+  list-style: none;
+  padding: 0;
 }
 
 .lista-footer li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  margin: 6px 0;
+}
+
+.lista-footer a {
+  color: $footer-accent;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.lista-footer a:hover {
+  color: $footer-text;
+}
+
+.footer-section p {
+  color: $footer-accent;
+}
+
+.footer-creditos {
+  border-top: 1px solid $footer-border;
+  margin-top: 30px;
+  padding: 15px;
+  font-size: 13px;
+  color: $footer-accent;
 }

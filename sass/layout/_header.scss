@@ -2,6 +2,7 @@
 
 .mi-header {
     background: $bg-mi-header;
+    letter-spacing: 1px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -57,7 +58,15 @@ header{
     margin-bottom: 15px;
 }
 
+.mi-navbar .navbar-toggler {
+  border: 2px solid #FBF9E4;
+  padding: 6px 10px;
+  border-radius: 8px;
+}
 
+.mi-navbar .navbar-toggler-icon {
+  filter: invert(100%);
+}
 
 @media (max-width: 520px){
     .mi-header,

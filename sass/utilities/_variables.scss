@@ -1,19 +1,21 @@
-$bg-header: rgb(163, 214, 205);
-$bg-mi-header: linear-gradient(135deg, #d7ecee 0%, #c4e1e3 50%, #eaf6f7 100%);
-$mi-header-h1: #2f4f52;
-$bg-nav: rgb(203, 236, 235);
-$bg-nav-hover: rgb(78, 137, 135);
-$bg-main-visual: rgb(207, 220, 223);
-$color-proceso-section: #384e50;
-$color-h2: #384e50;
-$bg-servicio-section: #c0e1e3;
-$color-h3: #384c50;
-$bg-body: linear-gradient(135deg,
-            #e8f4f5 0%,
-            #d7ecee 40%,
-            #f4f8f9 100%);
+$bg-header: #122C4F;
+$bg-mi-header: linear-gradient(90deg, #01161e, #124559);
+$mi-header-h1: #eff6e0;
+$bg-nav: #E6EEF8;
+$bg-nav-hover: #131f30;
 
+
+$bg-main-visual: #eff6e0;
+$color-proceso-section: #124559;
+$color-h2: #384e50;
+$bg-servicio-section: #eff6e0;
+$color-h3: #124559;
+$bg-body: #eff6e0;
             
+$footer-bg: #01161e;
+$footer-text: #eff6e0;
+$footer-accent: #598392;
+$footer-border: #124559;
 $bg-footer: rgb(58, 78, 84);
 $color-tipografia: white;
 $font-family-footer: Georgia, 'Times New Roman', Times, serif;
@@ -24,8 +26,12 @@ $bg-cajas: #f5f9fa;
 $color-h2: #2c3e3e;
 $color-texto-tomas-nieto: #799899;
 $color-texto:  #444;
-$bg-card-enfoque: linear-gradient(90deg, rgba(166, 161, 255, 0.6) 0%, rgba(0, 212, 255, 0.41) 100%);
-$bg-card-palabrapersonal: rgb(233, 170, 230);
+$bg-card-enfoque: linear-gradient( 90.8deg,  rgb(16, 30, 39) 2.2%, rgb(110, 153, 180) 84% );
+
+$bg-card-palabrapersonal: #f8fafc; 
+$color-palabra: #1e2a38; 
+$accent-palabra: #124559; 
+$accent-soft: #dbe7f3; 
 
 
 $bg-boton: #005cbf;

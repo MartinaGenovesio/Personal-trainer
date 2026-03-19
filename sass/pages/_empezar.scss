@@ -5,8 +5,9 @@ $bg-cajas: #f5f9fa;
 
 
 .empezar {
-  max-width: 800px;
-   @include marg-padg(40px auto, 0 20px);
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
 }
 
 .empezar h2{
@@ -24,7 +25,8 @@ $bg-cajas: #f5f9fa;
 
 
 .formulario{
-    max-width: 700px;
+    width: 100%;
+    max-width: none;
      @include marg-padg(auto, 30px);
     background: $bg-cajas;
     border-radius: 12px;
@@ -45,7 +47,8 @@ $bg-cajas: #f5f9fa;
 }
 
 .caja-entrenamiento, .caja-info-fisica, .caja-resultados, .caja-experiencia{
-    max-width: 700px;
+    width: 100%;
+    max-width: none;
     @include marg-padg(20px auto, 30px);
     background: $bg-cajas;
     border-radius: 12px;
@@ -151,3 +154,4 @@ $bg-cajas: #f5f9fa;
     flex-direction: column;
 }
 }
+

@@ -97,6 +97,10 @@ nav ul{
 background: $bg-card-enfoque;
 }
 
+.card-enfoque h3{
+    color: #eff6e0;
+}
+
 
 .mi-enfoque {
     text-align: center;
@@ -110,20 +114,56 @@ background: $bg-card-enfoque;
     text-align: center;
     list-style: none;
     font-size: 1rem;
-    color: #1a1820;
+    color: #eff6e0;
     margin-bottom: 16px;
     list-style-position: inside;
     padding: 0;
     margin: 10px 0 0 0;
 }
 
-.palabra-personal{
+.palabra-personal {
+    position: relative;
     background-color: $bg-card-palabrapersonal;
+    color: $color-palabra;
+    
+    padding: 28px 32px;
+    border-radius: 16px;
+
+    font-size: 1.1rem;
+    line-height: 1.7;
+    font-weight: 400;
+
+    max-width: 750px;
+    margin: 40px auto;
+
+    border: 1px solid $accent-soft;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+
     text-align: center;
-    @include marg-padg(16px, 16px);
-    border-radius: 10px;
 }
 
+.palabra-personal .comillas {
+    position: absolute;
+    top: -18px;
+    left: 20px;
+
+    font-size: 3.5rem;
+    color: $accent-palabra;
+    opacity: 0.2;
+
+    font-family: serif;
+}
+
+.palabra-personal::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: $accent-palabra;
+    margin: 20px auto 0;
+    border-radius: 2px;
+}
 
 
 /*-----------GRID----------*/
