@@ -1,39 +1,85 @@
 @use '../utilities/variables' as *;
 @use '../utilities/mixins' as *;
 
-.contenedor-cards {
-        max-width: 900px;
-        @include marg-padg(20px auto, 20px);
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 25px;
+.resultados-alumnos h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #124559;
 
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+
+    letter-spacing: 0.5px;
+}
+
+.contenedor-cards {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
 }
 
 .card-testimonio {
-    padding: 16px 8px;
-    width:  360px;
-    margin-bottom: 20px;
+    width: 340px;
     background-color: $bg-card-testimonios;
-    border-radius: 12px;
-    box-shadow: $shadow-card-testimonios;
+    border-radius: 16px;
+
+    padding: 20px 16px;
     text-align: center;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+
+    border: 1px solid rgba(0,0,0,0.05);
 }
 
-.card-testimonio h3{
+.card-testimonio:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+.card-testimonio img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.card-testimonio h3 {
     text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
     font-family: $font-h3-testimonios;
     color: $color-font-h3-testimonios;
-    margin: 10px 0 4px;
-    font-size: 18px;
+    margin-bottom: 10px;
 }
 
 .card-testimonio p{
-    padding: 15px 20px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    padding: 0 10px;
     font-style: italic;
+    position: relative;
+    padding: 15px 20px;
     font-size: 13px;
     color: $color-p-testimonios;
+}
+
+.card-testimonio p::before {
+    content: "“";
+    font-size: 2rem;
+    color: #2f5d8c;
+    opacity: 0.2;
+    position: absolute;
+    left: -5px;
+    top: -10px;
 }
 
 .card-testimonio img{
@@ -85,6 +131,7 @@
         align-items: center;
         padding: 10px;
 }
+}
 
 .card-testimonio{
     width: 100%;
@@ -94,4 +141,19 @@
 .card-testimonio img{
     height: 200px;
 }
+
+@media (max-width: 520px) {
+    .contenedor-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-testimonio {
+        width: 100%;
+        max-width: 340px;
+    }
+
+    .card-testimonio img {
+        height: 200px;
+    }
 }
