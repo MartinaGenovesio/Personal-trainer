@@ -60,7 +60,7 @@ header {
 /*----------NAVEGACIÓN-------*/
 .navbar-nav {
   display: flex;
-  gap: 12px;
+  gap: 25px;
 }
 
 .navbar-nav .nav-link {
@@ -68,8 +68,8 @@ header {
   align-items: center;
   justify-content: center;
   background-color: #E6EEF8;
-  padding: 8px 14px;
-  border-radius: 10px;
+  padding: 18px 25px;
+  border-radius: 12px;
   text-decoration: none;
   color: black;
   transition: 0.3s ease;
@@ -96,6 +96,25 @@ header {
 
 .mi-navbar .navbar-toggler-icon {
   filter: invert(100%);
+}
+
+.nav-link {
+  padding: 18px 25px;
+  text-decoration: none;
+  color: #01161e;
+  transition: 0.3s;
+}
+
+/* hover */
+.nav-link:hover {
+  opacity: 0.7;
+}
+
+/* activo */
+.navbar .nav-link.active {
+  background-color: #78290f;
+  color: white;
+  border-radius: 8px;
 }
 
 @media (max-width: 520px) {
@@ -197,14 +216,17 @@ footer {
 
 .proceso-section {
   text-align: center;
+  padding: 60px 20px;
 }
 .proceso-section h2 {
   margin-bottom: 10px;
-  font-size: 1.6rem;
-  color: #124559;
+  font-size: 2.2rem;
+  max-width: 600px;
+  color: #78290f;
 }
 .proceso-section p {
-  font-size: 18px;
+  font-size: 1.1rem;
+  max-width: 500px;
   opacity: 0.9;
   color: #01161e;
 }
@@ -226,6 +248,40 @@ footer {
 
 .metodo-section h3 {
   margin: 16px auto;
+}
+
+.contenedor-boton {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  background-color: #001524;
+  display: block;
+  width: fit-content;
+  min-width: 250px;
+  margin: 40px auto;
+  padding: 16px 30px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 2px dashed #15616d;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transition: 0.4s;
+  border: 2px dashed #00BFA6;
+  background-color: #fff;
+  color: #00BFA6;
+}
+
+.btn:active {
+  background-color: #87dbd0;
 }
 
 #carouselEntrenamiento {
@@ -745,7 +801,7 @@ nav ul {
   font-size: 1.1rem;
   font-weight: 600;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  color: #243e5c;
+  color: #78290f;
   margin-bottom: 10px;
 }
 
@@ -1028,7 +1084,7 @@ nav ul {
 
 /* From Uiverse.io by Shakil-Babu */
 .btn {
-  background-color: #005cbf;
+  background-color: #001524;
   margin: 10px 10%;
   padding: 14px 40px;
   color: #fff;
@@ -1036,7 +1092,7 @@ nav ul {
   letter-spacing: 2px;
   cursor: pointer;
   border-radius: 10px;
-  border: 2px dashed #2d00bf;
+  border: 2px dashed #15616d;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   transition: 0.4s;
 }

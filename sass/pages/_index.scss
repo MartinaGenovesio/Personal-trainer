@@ -23,15 +23,18 @@
 
 .proceso-section {
     text-align: center;
+    padding: 60px 20px;
 
     h2 {
         margin-bottom: 10px;
-        font-size: 1.6rem;
+        font-size: 2.2rem; 
+        max-width: 600px;
         color: $color-proceso-section;
     }
 
     p {
-        font-size: 18px;
+        font-size: 1.1rem;
+        max-width: 500px;
         opacity: 0.9;
         color: #01161e;
     }
@@ -54,6 +57,46 @@
 
 .metodo-section h3{
   margin: 16px auto;
+}
+
+.contenedor-boton {
+  display: flex;
+  justify-content: center; // 🔥 centra SI O SI
+}
+
+.btn {
+  background-color: $bg-boton;
+
+  display: block;
+  width: fit-content;
+  min-width: 250px;     
+  margin: 40px auto;
+
+  padding: 16px 30px;
+
+  color: $color-boton;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  cursor: pointer;
+  border-radius: 10px;
+  border: 2px dashed $color-border-boton;
+  box-shadow: $color-shadow-boton;
+
+  transition: all 0.3s ease;
+}
+
+
+.btn:hover {
+ transition: .4s;
+ border: 2px dashed #00BFA6;
+ background-color: #fff;
+ color: #00BFA6;
+}
+
+.btn:active {
+ background-color: #87dbd0;
 }
 
 #carouselEntrenamiento{ 
