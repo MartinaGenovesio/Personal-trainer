@@ -1,10 +1,6 @@
 
 /*------------ PLANES -----------*/
 
-.seguimiento-gral{
-    background-color: white;
-}
-
 .seguimiento{
     display: flex;
     gap: 40px;
@@ -13,6 +9,7 @@
 
 .seguimiento-imagen{
     text-align: center;
+    filter: drop-shadow(0 20px 30px rgba(0,0,0,0.2))
 }
 
 .seguimiento-imagen h2{
@@ -20,19 +17,21 @@
   font-weight: 700;
   text-align: center;
   position: relative;
-  color: #2b2b2b;
+  color: #3a5a71;
 }
 
 .seguimiento-derecha{
     display: flex;
   flex-direction: column;
   gap: 20px;
+  color: #3a5a71;
 }
 
 .beneficios{
     border: 2px solid;
     border-radius: 10px;
     padding: 16px;
+
 }
 
 .beneficios:nth-of-type(1) h3::before {
@@ -56,7 +55,8 @@
 }
 
 .beneficios:nth-of-type(4) {
-background-color: rgb(181, 214, 239);
+background-color: #001524;
+color: #eff6e0;
   
 }
 
