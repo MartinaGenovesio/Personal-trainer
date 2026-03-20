@@ -1,12 +1,10 @@
 @use '../utilities/variables' as *;
 @use '../utilities/mixins' as *;
 
-
 .proceso-section,
 .metodo-section,
 .servicio-section,
 .plan-section {
-
     background-color: $bg-main-visual;
     border-radius: 12px;
     padding: 25px;
@@ -16,9 +14,7 @@
 
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 
-    /* Layout */
     @include flex-valores(flex, column, center, center);
-
 }
 
 .proceso-section {
@@ -40,71 +36,70 @@
     }
 }
 
-.plan-section ul {
-    list-style-position: inside;
-    @include marg-padg(10px 0 0 0, 0);
-
-
-}
-.metodo-section{
+.metodo-section {
     text-align: center;
     color: #01161e;
-}
 
-.metodo-section h2{
-  color: #124559;
-}
+    h2 {
+        color: #124559;
+    }
 
-.metodo-section h3{
-  margin: 16px auto;
+    h3 {
+        margin: 16px auto;
+    }
+
+    p {
+        max-width: 650px;
+        margin: 6px auto;
+        line-height: 1.6;
+    }
 }
 
 .contenedor-boton {
-  display: flex;
-  justify-content: center; 
+    display: flex;
+    justify-content: center; 
 }
 
 .btn {
-  background-color: $bg-boton;
+    background-color: $bg-boton;
 
-  display: block;
-  width: fit-content;
-  min-width: 250px;     
-  margin: 40px auto;
+    display: block;
+    width: fit-content;
+    min-width: 250px;     
+    margin: 40px auto;
 
-  padding: 16px 30px;
+    padding: 16px 30px;
 
-  color: $color-boton;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+    color: $color-boton;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 
-  cursor: pointer;
-  border-radius: 10px;
-  border: 2px dashed $color-border-boton;
-  box-shadow: $color-shadow-boton;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px dashed $color-border-boton;
+    box-shadow: $color-shadow-boton;
 
-  transition: all 0.3s ease;
+    transition: all 0.3s ease;
+
+    &:hover {
+        border: 2px dashed #00BFA6;
+        background-color: #fff;
+        color: #00BFA6;
+    }
+
+    &:active {
+        background-color: #87dbd0;
+    }
 }
 
+/*---------- CAROUSEL --------------*/
 
-.btn:hover {
- transition: .4s;
- border: 2px dashed #00BFA6;
- background-color: #fff;
- color: #00BFA6;
-}
-
-.btn:active {
- background-color: #87dbd0;
-}
-
-#carouselEntrenamiento{ 
+#carouselEntrenamiento { 
     position: relative;
     max-width: 900px;
     margin: 0 auto;
 }
-
 
 .carousel-item img {
     width: 100%;
@@ -119,87 +114,59 @@
     margin-bottom: 0;
 }
 
-
-.metodo-section p {
-    max-width: 650px;
-    margin: 6px auto;
-    line-height: 1.6;
-}
-
-.servicio-section{
-    /* visual */
-   background-color: $bg-servicio-section;
-   text-align: center;
-   border-radius: 10px;
-   border: 5px;
-   list-style-position: inside;
-
-   /* box model */
-    max-width: 900px;
-   width: 90%;
-   @include marg-padg(30px auto, 20px)
-
-}
-
-.servicio-section h3 {
-    margin-bottom: 10px;
-    color: $color-h3;
-}
-
-.servicio-section ol {
-    list-style: none;
-     padding: 0;
-    margin: 0;
-    line-height: 1.9;
-    font-size: 18px;
-    color: #01161e;
- @include marg-padg(10px 0 0 0, 0);
-}
-
-.plan-section ul{
-    list-style: none;
+.servicio-section {
+    background-color: $bg-servicio-section;
     text-align: center;
-    line-height: 1.8;
-    color: #01161e;
-    
+
+    @include marg-padg(30px auto, 20px);
+
+    h3 {
+        margin-bottom: 10px;
+        color: $color-h3;
+    }
+
+    ol {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        line-height: 1.9;
+        font-size: 18px;
+        color: #01161e;
+
+        @include marg-padg(10px 0 0 0, 0);
+    }
 }
 
-.contendor-img-pesarusa{
+.contendor-img-pesarusa {
     width: 100%;
     height: 100%;
-}
-   
-.contendor-img-pesarusa img{
-  width: 100%;
-  max-width: 900px; 
-@include block-valores;
-  border-radius: 12px
-}
 
+    img {
+        width: 100%;
+        max-width: 900px;
+        @include block-valores;
+        border-radius: 12px;
+    }
+}
 
 .plan-section {
     text-align: center;
-    width: 90%;
-    max-width: 900px;
-    margin: 30px auto;
-    padding: 20px;
+
+    h3 {
+        margin-bottom: 15px;
+        font-size: 1.4rem;
+        color: #3d4c4d;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        line-height: 1.9;
+        font-size: 18px;
+        color: #01161e;
+    }
 }
 
-
-.plan-section h3 {
-    margin-bottom: 15px;
-    font-size: 1.4rem;
-    color: #3d4c4d;
-}
-
-.plan-section ul {
-    list-style: none;
-    padding: 0;
-    line-height: 1.9;
-    font-size: 18px;
-}
-
-/* (sacado de internet) */
 .plan {
   border-radius: 16px;
   box-shadow: 0 30px 30px -25px rgba(0, 38, 255, 0.205);
@@ -330,8 +297,6 @@
 
   animation: aparecerCard 2s ease-out forwards;
 }
-
-
 
 @keyframes aparecerCard {
     from {

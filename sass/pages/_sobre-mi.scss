@@ -1,20 +1,15 @@
 @use '../utilities/variables' as *;
 @use '../utilities/mixins' as *;
 
-
-/*----------"SOBRE MÍ"---------*/
-
-
-.sobre-mi-main{
+.sobre-mi-main {
     padding: 60px 20px;
 }
 
-.sobre-mi_h2{
+.sobre-mi_h2 {
     font-size: 32px;
     text-align: center;
     font-weight: 700;
     color: $color-h2;
-
 }
 
 .sobre-mi_h2::after {
@@ -33,78 +28,73 @@
     color: #444;
     max-width: 650px;
     margin: 0 auto;
-  text-align: center;
+    text-align: center;
 }
 
 .sobre-mi-texto p strong {
     color: $color-texto-tomas-nieto;
 }
 
-nav ul{
+nav ul {
     display: flex;
-    gap: 12px; 
+    gap: 12px;
 }
 
-.sobre-mi figcaption{
+
+.sobre-mi figcaption {
     font-size: 16px;
     text-align: center;
     margin: 16px;
 }
 
-.sobre-mi figcaption p{
+.sobre-mi figcaption p {
     font-size: 1.1rem;
-  line-height: 1.7;
-  color: $color-texto;
-  max-width: 600px;
+    line-height: 1.7;
+    color: $color-texto;
+    max-width: 600px;
 }
 
-.como-trabajo{
-    margin-top: 20px;
-    margin: 0 auto;
+.como-trabajo {
+    margin: 20px auto;
     text-align: center;
     padding: 20px;
     font-size: 24px;
     font-weight: 700;
 }
 
-.trabajo-img img{
-  width: 100%;
-  max-width: 900px;
+.trabajo-img img {
+    width: 100%;
+    max-width: 900px;
 
-@include block-valores;
-  border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    @include block-valores;
+
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-.trabajo-img figcaption{
+.trabajo-img figcaption {
     text-align: center;
-     @include marg-padg(18px, 16px);
+    @include marg-padg(18px, 16px);
     border-radius: 10px;
 }
 
-
-
-.como-trabajo-parrafo{
-@include medidas-sobremi-cards;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+.como-trabajo-parrafo,
+.card-enfoque {
+    @include medidas-sobremi-cards;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
 }
 
-.card-enfoque{
-@include medidas-sobremi-cards;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
-
-    background: #a6a1ff;
-background: $bg-card-enfoque;
+.card-enfoque {
+    background: $bg-card-enfoque;
 }
 
-.card-enfoque h3{
+.card-enfoque h3 {
     color: #eff6e0;
 }
 
-
 .mi-enfoque {
     text-align: center;
-    Color: #222;
+    color: #222;
     letter-spacing: 1px;
     font-size: 24px;
     font-weight: 700;
@@ -115,7 +105,6 @@ background: $bg-card-enfoque;
     list-style: none;
     font-size: 1rem;
     color: #eff6e0;
-    margin-bottom: 16px;
     list-style-position: inside;
     padding: 0;
     margin: 10px 0 0 0;
@@ -165,90 +154,56 @@ background: $bg-card-enfoque;
     border-radius: 2px;
 }
 
-
-/*-----------GRID----------*/
-
 .especialidades {
- @include marg-padg(10px 5px, 20px 20px);
-  background-color: #f2f2f2;
-  border-radius: 16px;
+    @include marg-padg(10px 5px, 20px 20px);
+    background-color: #f2f2f2;
+    border-radius: 16px;
 }
 
 .grid-bloques {
-  max-width: 1000px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
-/*---MOVILIDAD---*/
-
-.bloque-movilidad {
-    background-color: #cfe3e4;
-    border-radius: 12px;
-    padding: 16px;
-}
-
-.bloque-movilidad:hover{
-    transform: translate(-6px);
-    box-shadow: 0 8px 18px rgba(0,0,0,0.12); 
-}
-
-/*---RESISTENCIA---*/
-
-.bloque-resistencia {
-    background-color: #cfe3e4;
-    border-radius: 12px;
-    padding: 16px;
-}
-
-.bloque-resistencia:hover{
-    transform: translate(-6px);
-     box-shadow: 0 8px 18px rgba(0,0,0,0.12); 
-}
-
-/*---FUERZA---*/
-
+.bloque-movilidad,
+.bloque-resistencia,
 .bloque-fuerza {
     background-color: #cfe3e4;
     border-radius: 12px;
     padding: 16px;
+
+    &:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 8px 18px rgba(0,0,0,0.12); 
+    }
 }
 
-.bloque-fuerza:hover{
-    transform: translate(-6px);
-     box-shadow: 0 8px 18px rgba(0,0,0,0.12); 
-}
-
-
-/*---HABITOS---*/
-
-.bloque-habitos{
+.bloque-habitos {
     background-color: #cfe3e4;
     grid-column: 1 / 4;
     border-radius: 12px;
     padding: 16px;
 
+    &:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 8px 18px rgba(0,0,0,0.12); 
+    }
 }
 
-.bloque-habitos:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 18px rgba(0,0,0,0.12); 
-}
+@media (max-width: 520px) {
 
+    .grid-bloques {
+        grid-template-columns: 1fr;
+    }
 
-@media (max-width: 520px){
+    .bloque-habitos {
+        grid-column: auto;
+    }
 
-.grid-bloques {
-  grid-template-columns: 1fr;
-}
-
-.bloque-habitos{
-    grid-column: auto
-}
-
-.card-enfoque{
-       max-width: 340px;
-}
+    .card-enfoque {
+        max-width: 340px;
+    }
 }
